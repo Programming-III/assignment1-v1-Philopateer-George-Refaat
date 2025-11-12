@@ -1,15 +1,32 @@
-#ifndef VISITOR_H
-#define VISITOR_H
-
+#ifndef ENCLOSURE_H_INCLUDED
+#define ENCLOSURE_H_INCLUDED
+#include "Animal.h"
+#include <iostream>
 #include <string>
 using namespace std;
 
-//define visitor class here
+class Visitor{
+    private:
+    string visitorName;
+    int ticketsBought;
+
+    public:
+
+    Visitor();
+    Visitor(string visitorName , int ticketsBought);
+    ~Visitor();
+
+    void dipsplayInfo();
+
+    void setVisitorName(string n);
+    void setTicketsBought(int x);
+
+    string getVisitorName();
+    int getTicketsbought();
 
 
 
 
 
-
-
+};
 #endif
